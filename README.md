@@ -29,10 +29,9 @@ Masadi Password Generator adalah alat berbasis Command Line Interface (CLI) yang
 2.  **Kloning repositori ini (atau unduh file `masadi_passgen.py`):**
 
     ```bash
-    git clone https://github.com/MasadiSec/masadi-passgen.git
-    cd masadi-passgen
+    git clone https://github.com/MasAdii/password_generatot.git
+    cd password_generatot
     ```
-    *(Ganti `https://github.com/MasadiSec/masadi-passgen.git` dengan URL repositori Anda jika ini adalah proyek nyata)*
 
 3.  **Instal dependensi yang diperlukan:**
     Alat ini sangat bergantung pada pustaka `rich` dan `pyperclip`.
@@ -44,69 +43,67 @@ Masadi Password Generator adalah alat berbasis Command Line Interface (CLI) yang
 
 ## 💡 Penggunaan
 
-Jalankan skrip dari terminal Anda:
+Jalankan skrip dari terminal Anda untuk melihat semua opsi yang tersedia:
+
 
 ```bash
-python masadi_passgen.py --help```
+python masadi_passgen.py --help
 
-Ini akan menampilkan semua opsi yang tersedia:
+Ini akan menampilkan output bantuan seperti di bawah ini:
+
 usage: masadi_passgen.py [-h] [-l LENGTH] [-U] [-L] [-N] [-S] [-s] [-c] [-e] [--silent] [--loop LOOP]
+
 Masadi Password Generator - Buat password yang kuat dan aman dengan antarmuka CLI yang premium.
+
 options:
--h, --help show this help message and exit
--l LENGTH, --length LENGTH
-Panjang password yang dihasilkan (default: 16).
--U, --uppercase Sertakan huruf besar (A-Z).
--L, --lowercase Sertakan huruf kecil (a-z).
--N, --numbers Sertakan angka (0-9).
--S, --symbols Sertakan simbol khusus (!@#$%^&* dll.).
--s, --secure Mode Aman: Menghasilkan password yang sangat kuat (minimal 20 karakter, semua jenis karakter aktif).
--c, --copy Salin password yang dihasilkan ke clipboard.
--e, --export Ekspor password yang dihasilkan ke file 'passwords.txt'.
---silent Mode Senyap: Langsung mencetak password tanpa banner dan animasi UI.
---loop LOOP Jumlah password yang akan dihasilkan (misalnya, --loop 5 untuk 5 password).
+  -h, --help            show this help message and exit
+  -l LENGTH, --length LENGTH
+                        Panjang password yang dihasilkan (default: 16).
+  -U, --uppercase       Sertakan huruf besar (A-Z).
+  -L, --lowercase       Sertakan huruf kecil (a-z).
+  -N, --numbers         Sertakan angka (0-9).
+  -S, --symbols         Sertakan simbol khusus (!@#$%^&* dll.).
+  -s, --secure          Mode Aman: Menghasilkan password yang sangat kuat (minimal 20 karakter, semua jenis karakter aktif).
+  -c, --copy            Salin password yang dihasilkan ke clipboard.
+  -e, --export          Ekspor password yang dihasilkan ke file 'passwords.txt'.
+  --silent              Mode Senyap: Langsung mencetak password tanpa banner dan animasi UI.
+  --loop LOOP           Jumlah password yang akan dihasilkan (misalnya, --loop 5 untuk 5 password).
 
-
-### Contoh Penggunaan:
-
-1.  **Hasilkan password default (panjang 16, semua jenis karakter):**
-    ```bash
-    python masadi_passgen.py
-    ```
-
-2.  **Hasilkan password panjang 12 dengan huruf kecil dan angka saja:**
-    ```bash
-    python masadi_passgen.py -l 12 -L -N
-    ```
-
-3.  **Hasilkan password yang sangat kuat dalam mode aman dan salin ke clipboard:**
-    ```bash
-    python masadi_passgen.py -s -c
-    ```
-
-4.  **Hasilkan 3 password, lalu ekspor ke file:**
-    ```bash
-    python masadi_passgen.py --loop 3 -e
-    ```
-
-5.  **Hasilkan password dalam mode senyap (berguna untuk scripting):**
-    ```bash
-    python masadi_passgen.py --silent -l 24 -U -L -N -S
-    ```
-    Output:
-    ```    XyZ1@bC2!dE3$fG4%hI5^jK6*
-    ```
-
-6.  **Hasilkan password dengan semua jenis karakter (opsi default jika tidak ada yang dipilih):**
-    ```bash
-    python masadi_passgen.py -l 20
-    ```
-    *(Ini setara dengan `python masadi_passgen.py -l 20 -U -L -N -S` jika Anda tidak menentukan jenis karakter apa pun.)*
-
-## 💖 Kontribusi
-
-Kontribusi disambut baik! Jika Anda memiliki ide untuk fitur baru, laporan bug, atau peningkatan, jangan ragu untuk membuka `issue` atau mengajukan `pull request`.
-
-
-Dibuat dengan ❤️ oleh Masadi Security Labs.
-[Repository GitHub](https://github.com/MasAdii/password_generatot) (Ganti dengan link repo Anda)
+Contoh Penggunaan:
+Hasilkan password default (panjang 16, semua jenis karakter):
+Generated bash
+python masadi_passgen.py
+Use code with caution.
+Bash
+Hasilkan password panjang 12 dengan huruf kecil dan angka saja:
+Generated bash
+python masadi_passgen.py -l 12 -L -N
+Use code with caution.
+Bash
+Hasilkan password yang sangat kuat dalam mode aman dan salin ke clipboard:
+Generated bash
+python masadi_passgen.py -s -c
+Use code with caution.
+Bash
+Hasilkan 3 password, lalu ekspor ke file:
+Generated bash
+python masadi_passgen.py --loop 3 -e
+Use code with caution.
+Bash
+Hasilkan password dalam mode senyap (berguna untuk scripting):
+Generated bash
+python masadi_passgen.py --silent -l 24 -U -L -N -S
+Use code with caution.
+Bash
+Output:
+Generated code
+XyZ1@bC2!dE3$fG4%hI5^jK6*
+Use code with caution.
+Hasilkan password dengan semua jenis karakter (opsi default jika tidak ada yang dipilih):
+Generated bash
+python masadi_passgen.py -l 20
+Use code with caution.
+Bash
+(Ini setara dengan python masadi_passgen.py -l 20 -U -L -N -S jika Anda tidak menentukan jenis karakter apa pun.)
+💖 Kontribusi
+Kontribusi disambut baik! Jika Anda memiliki ide untuk fitur baru, laporan bug, atau peningkatan, jangan ragu untuk membuka issue atau mengajukan pull request.
