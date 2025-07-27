@@ -68,7 +68,7 @@ options:
   -e, --export          Ekspor password yang dihasilkan ke file 'passwords.txt'.
   --silent              Mode Senyap: Langsung mencetak password tanpa banner dan animasi UI.
   --loop LOOP           Jumlah password yang akan dihasilkan (misalnya, --loop 5 untuk 5 password).
-
+```
 Contoh Penggunaan:
 Hasilkan password default (panjang 16, semua jenis karakter):
 Generated bash
