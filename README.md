@@ -71,39 +71,38 @@ options:
 ```
 Contoh Penggunaan:
 Hasilkan password default (panjang 16, semua jenis karakter):
-Generated bash
+```
 python masadi_passgen.py
 Use code with caution.
-Bash
+```
 Hasilkan password panjang 12 dengan huruf kecil dan angka saja:
-Generated bash
+```
 python masadi_passgen.py -l 12 -L -N
 Use code with caution.
-Bash
+```
 Hasilkan password yang sangat kuat dalam mode aman dan salin ke clipboard:
-Generated bash
+```
 python masadi_passgen.py -s -c
 Use code with caution.
-Bash
+```
 Hasilkan 3 password, lalu ekspor ke file:
-Generated bash
+```
 python masadi_passgen.py --loop 3 -e
 Use code with caution.
-Bash
+```
 Hasilkan password dalam mode senyap (berguna untuk scripting):
-Generated bash
+```
 python masadi_passgen.py --silent -l 24 -U -L -N -S
 Use code with caution.
-Bash
+```
 Output:
 Generated code
 XyZ1@bC2!dE3$fG4%hI5^jK6*
-Use code with caution.
 Hasilkan password dengan semua jenis karakter (opsi default jika tidak ada yang dipilih):
-Generated bash
+```
 python masadi_passgen.py -l 20
 Use code with caution.
-Bash
+```
 (Ini setara dengan python masadi_passgen.py -l 20 -U -L -N -S jika Anda tidak menentukan jenis karakter apa pun.)
 💖 Kontribusi
 Kontribusi disambut baik! Jika Anda memiliki ide untuk fitur baru, laporan bug, atau peningkatan, jangan ragu untuk membuka issue atau mengajukan pull request.
